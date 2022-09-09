@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style0.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/fv.ico" />
+</head>
+
+<body id="app" class="light" style="transition: .2s;">
+    <div class='preloader preloader1'></div>
+    <div class='preloader preloader2'></div>
+    <div class='preloader preloader3'></div>
+    <div class='preloader preloader4'></div>
+    <div class='preloader preloader5'></div>
+    <div class="my_castle">
+        <div class="top_content matovoye_steklo">
+            <h3 class="h3text style_type"><a href="index.html">My Castle</a></h3>
+            <div class="panel">
+                <div class="panel_butt">
+                    <span class="text_butt_nav matovoye_steklo_butt matovoye_steklo nav1">Menu</span>
+                    <div class="pos text_li_style" id="list1">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="calc.html">Calculator</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </div>
+                </div>
+                <div class="menu">
+                    <span id="theme-toggle" class="matovoye_steklo_butt matovoye_steklo nav2 info_img">
+                      <img src="img/icon.png" alt="" class="img_inf">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="calc pos_news matovoye_steklo info_panel">
+            <h1 class="h3text">Онлайн калькулятор недвижимости</h1>
+            <div class="col">
+                <div class="calc">
+                    <p><span>Сумма страхования<br> основных конструкций:</span>
+                        <br><input type="number" id="one"></p>
+                    <p><span>Сумма страхования<br> перед третьими лицами:</span>
+                        <br><input type="number" id="two"></p>
+                    <p><span>Движимое домашнее<br> имущество:</span>
+                        <br><input type="number" id="sum_item"></p>
+                </div>
+                <div class="button_calc">
+                    <button onclick="calc()">Просчитать</button>
+                </div>
+            </div>
+            <h2 class="h3text">Сумма для оформления страховки: <span id="num"></span><span>грн.</span></h2>
+            </h2>
+
+        </div>
+        <div class="matovoye_steklo info_panel" style="display: flex; justify-content: center;
+        ">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Валюта</th>
+                        <th scope="col">Покупка</th>
+                        <th scope="col">Продажа</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td id="valUSD"></td>
+                        <td id="buyUSD"></td>
+                        <td id="saleUSD"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td id="valEUR"></td>
+                        <td id="buyEUR"></td>
+                        <td id="saleEUR"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer matovoye_steklo matovoye_steklo_butt">
+            <div>
+                <span id="start_year">2015-</span><span id='date'></span>
+            </div>
+            <div id="date_show_info" style="display: none;">
+                С вами уже<span id="date_info"></span>лет
+            </div>
+
+        </div>
+    </div>
+    <script src="js/calc.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+
+
+</body>
+
+</html>

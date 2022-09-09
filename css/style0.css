@@ -1,0 +1,697 @@
+        @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500;600&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgb(232, 232, 232);
+        }
+        
+        body {
+            background-image: url(../imgs/wp.jpg);
+        }
+        
+        .col {
+            width: auto;
+            margin: 100px auto;
+            border-radius: 10px;
+            padding: 20px;
+            border: 3px solid rgb(139, 255, 38);
+        }
+        
+        input:invalid {
+            border: 1px dashed red;
+        }
+        
+        input:invalid:required {
+            background-image: linear-gradient(to right, rgb(251, 210, 218), rgb(195, 255, 195));
+        }
+        
+        input:valid {
+            border: 2px solid black;
+        }
+        
+        .dark {
+            background-color: rgba(0, 0, 0, 0.779);
+        }
+        
+        .dark .matovoye_steklo {
+            background-color: rgba(74, 74, 74, 0.779);
+        }
+        
+        .dark .text_li_style>li {
+            background-color: rgba(74, 74, 74, 0.303);
+            box-shadow: 5px 5px 6px 1px rgba(109, 109, 109, 0.2);
+            color: aliceblue;
+        }
+        
+        .dark .text_li_style>li:hover {
+            box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.534);
+            color: #000;
+        }
+        
+        .dark .style_type {
+            color: aliceblue;
+        }
+        
+        .dark .nav1,
+        .dark .nav2 {
+            color: aliceblue;
+        }
+        
+        .dark .nav2 {
+            transform: rotate(360deg);
+        }
+        
+        .dark .matovoye_steklo_butt:hover {
+            color: #000;
+            box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.534);
+        }
+        
+        .dark .slider-dots_item {
+            background-color: rgba(255, 255, 255, 0.528);
+            margin: 0 4px;
+        }
+        
+        .dark .slider,
+        .dark .next {
+            color: aliceblue;
+        }
+        
+        .dark .info_panel {
+            color: aliceblue;
+        }
+        
+        .dark .footer {
+            color: aliceblue;
+        }
+        
+        .dark .active,
+        .dark .slider-dots_item:hover {
+            background-color: rgba(255, 255, 255, 0.864);
+            box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.534);
+        }
+        
+        .dark .slidelogo_img_size>img {
+            border-radius: 20px;
+            filter: invert(0%);
+        }
+        
+        .dark .info_img>.img_inf {
+            border-radius: 20px;
+            filter: invert(0%);
+        }
+        
+        .info_img>.img_inf {
+            border-radius: 20px;
+            filter: invert(100%);
+        }
+        
+        .dark .txt_logo {
+            border-bottom: 2px solid aliceblue;
+        }
+        
+        .dark .logo_text {
+            color: aliceblue;
+            border: none;
+        }
+        
+        .dark .row {
+            background-color: rgba(0, 0, 0, 0.494);
+            color: aliceblue;
+        }
+        
+        .nav2 {
+            font-size: 2.25em;
+            display: flex;
+            justify-content: center;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        .matovoye_steklo {
+            width: 1000px;
+            background-color: rgba(255, 255, 255, 0.884);
+            box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 5px;
+        }
+        
+        .matovoye_steklo_butt {
+            transition: .3s;
+        }
+        
+        .matovoye_steklo_butt:hover {
+            background-color: rgba(255, 255, 255, 0.773);
+            box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.534);
+        }
+        
+        .my_castle {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+        
+        .top_content {
+            width: 1000px;
+            position: fixed;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 40px;
+            padding: 10px;
+            border-radius: 3px 3px;
+            margin-top: 0;
+        }
+        
+        .panel {
+            display: flex;
+        }
+        
+        .col {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        
+        .col {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .col>.button_calc>button {
+            width: 310px;
+            height: 70px;
+            cursor: pointer;
+            border-radius: 20px;
+            background-color: aliceblue;
+            color: #000;
+            font-size: 35px;
+            margin: 0;
+        }
+        
+        .calc {
+            padding: 40px 0 0;
+        }
+        
+        .calc>p>input {
+            width: 200px;
+            font-size: 24px;
+            padding: 6px;
+            border: none;
+            background-color: aliceblue;
+            border-radius: 10px;
+            border-bottom: 1px solid black;
+        }
+        
+        .calc>p {
+            width: auto;
+            margin: 10px 0;
+            font-size: 24px;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+        }
+        
+        .h3text {
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+            font-weight: 600;
+            margin: 0 0 0 10px;
+        }
+        
+        .panel_butt {
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+        
+        .panel_butt,
+        .menu {
+            cursor: pointer;
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        
+        .nav2 {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .style_type {
+            font-size: 2.8125em;
+        }
+        
+        .text_li_style {
+            display: flex;
+            z-index: 102;
+            border-radius: 3px;
+            padding: 1px;
+            flex-direction: row;
+        }
+        
+        .text_li_style>li {
+            background-color: rgba(255, 255, 255, 0.555);
+            box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            margin: 3px 6px;
+            padding: 7px 10px;
+            font-size: 1.3em;
+            transition: .2s;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+        }
+        
+        .text_li_style>li:hover {
+            background-color: rgba(255, 255, 255, 0.773);
+            box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.534);
+        }
+        
+        .text_butt_nav {
+            font-size: 1.75em;
+            cursor: pointer;
+            padding: 8px;
+            width: 80px;
+            height: 45px;
+            align-items: center;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+        }
+        
+        .imgag {
+            margin-left: 40px;
+        }
+        /* Собственно сам слайдер */
+        
+        .pos_slider {
+            padding-top: 92px;
+            display: flex;
+            height: 453px;
+            width: 101%;
+        }
+        
+        .slider {
+            position: relative;
+            height: 300px;
+            margin-bottom: 15px;
+        }
+        /* Картинка мастабируется по отношению к родительскому элементу */
+        
+        .slider .item img {
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        
+        .logo_item {
+            font-size: 14px;
+            color: #000;
+            max-height: 300px;
+        }
+        
+        .slidelogo_img_size {
+            width: 310px;
+            margin: 0 0 0 10px;
+        }
+        
+        .slidelogo_img_size img {
+            width: 100%;
+            filter: invert(100%);
+        }
+        /* Кнопки вперед и назад */
+        
+        .slider .prev,
+        .slider .next {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        
+        .slider .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* Заголовок слайда */
+        
+        .slideText {
+            position: absolute;
+            color: rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255, 0.607);
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 2.1875em;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /* Тень*/
+        }
+        
+        .logo_text {
+            background-color: rgba(0, 0, 0, 0);
+            left: 70%;
+            width: 370px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .txt_logo {
+            font-size: 50px;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.79);
+        }
+        /* Кружочки */
+        
+        .slider-dots {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .slider-dots_item {
+            cursor: pointer;
+            height: 18px;
+            width: 18px;
+            margin: 2px 2px;
+            display: inline-block;
+            transition: .3s;
+            box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.2);
+        }
+        
+        .active,
+        .slider-dots_item:hover {
+            box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.534);
+        }
+        /* Анимация слайдов */
+        
+        .slider .item {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        #date_info {
+            font-size: 1.4em;
+        }
+        
+        .footer {
+            width: 100%;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            font-size: 1.25em;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            font-weight: 500;
+            margin: 10px 5px;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        .info_panel {
+            width: 100%;
+            padding: 10px 0;
+        }
+        
+        .info_panel>h1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2.25em;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+            font-weight: 600;
+        }
+        
+        .info_wall {
+            flex-wrap: wrap;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: 5px auto;
+        }
+        
+        .info_wall p {
+            font-size: 35px;
+        }
+        
+        .info_img {
+            margin-right: 10px;
+            filter: invert(0%);
+        }
+        
+        .info_img>img {
+            width: 100%;
+        }
+        
+        .info_text {
+            margin-left: 10px;
+            font-size: 18px;
+            width: 450px;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+            font-weight: 600;
+        }
+        
+        .info_rev {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        
+        .preloader {
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9910;
+            -webkit-transition: all 1s;
+            -o-transition: all 1s;
+            transition: all 1s;
+            -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+        }
+        
+        .preloader1 {
+            background-color: rgba(237, 237, 237, 0.813);
+            z-index: 9909
+        }
+        
+        .preloader2 {
+            background-color: rgba(208, 208, 208, 0.842);
+            z-index: 9908
+        }
+        
+        .preloader3 {
+            background-color: rgba(163, 163, 163, 0.67);
+            z-index: 9907
+        }
+        
+        .preloader4 {
+            background-color: rgba(123, 123, 123, 0.544);
+            z-index: 9906
+        }
+        
+        .preloader5 {
+            background-color: rgba(55, 55, 55, 0.442);
+            z-index: 9905
+        }
+        
+        .preloader_out_top_prepare {
+            top: -100vh;
+            transition: none !important;
+        }
+        
+        .preloader_in_top {
+            top: -100vh
+        }
+        
+        .preloader_out_bottom_prepare {
+            top: 100vh;
+            transition: none !important;
+        }
+        
+        .preloader_in_bottom {
+            top: 100vh
+        }
+        
+        .preloader_out_left_prepare {
+            left: -100vw;
+            transition: none !important;
+        }
+        
+        .preloader_in_left {
+            left: -100vw
+        }
+        
+        .preloader_out_right_prepare {
+            left: 100vw;
+            transition: none !important;
+        }
+        
+        .preloader_in_right {
+            left: 100vw
+        }
+        
+        .pos_news {
+            padding: 92px 0 0;
+            margin: 5px;
+        }
+        
+        iframe {
+            width: 400;
+            height: 250;
+        }
+        
+        .contacts {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .contact {
+            width: 300px;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+        }
+        
+        .contact ul {
+            font-size: 24px;
+        }
+        
+        ul li {
+            list-style-type: circle;
+            margin: 10px 0;
+        }
+        
+        .butt_style {
+            width: 100%;
+            color: #000;
+            margin: 0 auto;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+        }
+        
+        .dark .butt_style {
+            color: aliceblue;
+        }
+        
+        @media screen and (max-width: 1041px) {
+             :root {
+                font-size: calc(6px + 9px + 1.875px);
+            }
+            .top_content {
+                width: 100%;
+            }
+            .matovoye_steklo {
+                margin: 0;
+            }
+            .pos_slider {
+                width: 100%;
+            }
+            .text_li_style {
+                display: flex;
+                position: relative;
+                flex-direction: row;
+                display: none;
+            }
+            .pos_news {
+                margin: 0;
+            }
+        }
+        
+        @media screen and (max-width: 700px) {
+             :root {
+                font-size: calc(5px + 8px + 1.875px);
+            }
+            .top_content {
+                display: flex;
+                flex-direction: row;
+            }
+            .info_text {
+                font-size: 18px;
+            }
+            .pos_news {
+                padding: 140px 0 0;
+            }
+            .footer {
+                margin: 0;
+            }
+        }
+        
+        @media screen and (max-width: 665px) {
+             :root {
+                font-size: calc(4px + 7px + 1.875px);
+            }
+            .slidelogo_img_size img {
+                display: none;
+            }
+            .logo_text {
+                left: 50%;
+            }
+            .text_li_style {
+                display: flex;
+                flex-direction: column;
+                display: none;
+            }
+            .pos_slider {
+                padding-top: 80px;
+                display: flex;
+                height: 515px;
+                width: 100%;
+            }
+            .panel_butt {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+        @media screen and (max-width: 460px) {
+            .logo_text,
+            .slideText {
+                font-size: 24px;
+            }
+             :root {
+                font-size: calc(3.5px + 6.5px + 1.875px);
+            }
+        }
